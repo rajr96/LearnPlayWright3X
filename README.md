@@ -33,7 +33,13 @@ LearnPlayWright3X/
 │   ├── 21_String_Operators.js  # String concatenation and template literals
 │   ├── 22_Ternary_Operator.js  # Ternary (conditional) operator
 │   ├── 28_Nested_terny_operator.js # Nested ternary operator patterns
-│   └── 31_Type_op.js           # typeof and type-checking operators
+│   ├── 31_Type_op.js           # typeof and type-checking operators
+│   ├── 32_Increment_Decrement_operator.js # ++ and -- operators (pre/post)
+│   └── 36_null_coalescing.js   # Nullish coalescing operator (??)
+├── 06_chapter_Statement/       # Control flow statements
+│   ├── 37_iQ.js                # IQ challenge on conditionals
+│   ├── 38.IQ.js                # Additional conditional challenges
+│   └── 39_multiple_condition.js # Multiple if-else statements
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
@@ -110,6 +116,8 @@ LearnPlayWright3X/
 | `22_Ternary_Operator.js` | Ternary Operator | Shorthand conditional: `condition ? value1 : value2` | Conditional expression, inline if-else |
 | `28_Nested_terny_operator.js` | Nested Ternary | Chaining multiple ternary operators | Multi-condition ternary, readability |
 | `31_Type_op.js` | typeof Operator | Checking data types at runtime with `typeof` | Type checking, dynamic typing, type guards |
+| `32_Increment_Decrement_operator.js` | Inc/Dec Operators | Pre and post increment/decrement (`++`, `--`) | ++x vs x++, --x vs x--, side effects |
+| `36_null_coalescing.js` | Nullish Coalescing | `??` operator to handle null/undefined | Providing defaults for nullish values |
 
 **What You'll Learn:**
 - Different types of operators (assignment, arithmetic, comparison, logical)
@@ -121,6 +129,25 @@ LearnPlayWright3X/
 - Ternary operator as shorthand for if-else
 - Nested ternary patterns for multi-condition logic
 - Runtime type checking with `typeof`
+- Increment/decrement operators and their side effects
+- Nullish coalescing operator for default values
+
+---
+
+### Chapter 6: Statements (`06_chapter_Statement/`)
+
+| File | Topic | Description | Concepts |
+|---|---|---|---|
+| `37_iQ.js` | Conditional Challenge | IQ challenge testing conditional logic | if-else, nested conditions |
+| `38.IQ.js` | More Challenges | Additional conditional statement practice | Complex decision making |
+| `39_multiple_condition.js` | Multiple Conditions | Grading system using if-else-if chains | Multiple branches, grade calculation |
+
+**What You'll Learn:**
+- Control flow with if statements
+- Else and else-if clauses
+- Chaining multiple conditions
+- Decision-making structures
+- Practical applications (grading systems, etc.)
 
 ---
 
@@ -285,7 +312,12 @@ git push -u origin master
 20. ✅ `22_Ternary_Operator.js` — Ternary (conditional) operator
 21. ✅ `28_Nested_terny_operator.js` — Nested ternary patterns
 22. ✅ `31_Type_op.js` — typeof & type-checking
-23. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
+23. ✅ `32_Increment_Decrement_operator.js` — ++/-- operators
+24. ✅ `36_null_coalescing.js` — Nullish coalescing operator (??)
+25. ✅ `37_iQ.js` — Conditional logic challenge
+26. ✅ `38.IQ.js` — More conditional challenges
+27. ✅ `39_multiple_condition.js` — If-else-if chains (grading system)
+28. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
 
 ---
 
@@ -447,6 +479,71 @@ console.log(typeof []);            // "object"
 console.log(typeof function(){}); // "function"
 ```
 
+#### Increment & Decrement Operators
+```js
+let x = 5;
+
+// Pre-increment (increment first, then return)
+console.log(++x);  // 6 (x is 6)
+console.log(x);    // 6
+
+// Post-increment (return first, then increment)
+let y = 5;
+console.log(y++);  // 5 (y is 6, but returns 5)
+console.log(y);    // 6
+
+// Same for decrement
+let z = 5;
+console.log(--z);  // 4 (pre-decrement)
+console.log(z--);  // 4 (post-decrement, z becomes 3)
+```
+
+#### Nullish Coalescing Operator (??)
+```js
+let a = null;
+let b = undefined;
+let c = 0;
+let d = "";
+
+console.log(a ?? "default");  // "default" (null is nullish)
+console.log(b ?? "default");  // "default" (undefined is nullish)
+console.log(c ?? "default");  // 0 (0 is not nullish)
+console.log(d ?? "default");  // "" (empty string is not nullish)
+
+// vs || operator (treats falsy values)
+console.log(0 || "default");  // "default" (0 is falsy)
+console.log(0 ?? "default");  // 0 (0 is not nullish)
+```
+
+### Control Flow - If Statements
+```js
+// Simple if
+if (age >= 18) {
+  console.log("You are an adult");
+}
+
+// if-else
+if (score >= 80) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+// if-else-if-else (grading system)
+let score = 85;
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 80) {
+  console.log("Grade: B");
+} else if (score >= 70) {
+  console.log("Grade: C");
+} else if (score >= 60) {
+  console.log("Grade: D");
+} else {
+  console.log("Grade: F");
+}
+```
+
 ---
 
 ## 🔗 Useful Resources
@@ -462,13 +559,13 @@ console.log(typeof function(){}); // "function"
 
 ## 📊 Statistics
 
-- **Total Chapters:** 5
-- **Total Exercises:** 20
+- **Total Chapters:** 6
+- **Total Exercises:** 23
 - **IQ Notes:** 5 comprehensive guides
 - **Keywords Documented:** 65+
 - **Commands Covered:** 100+
 - **Keyboard Shortcuts:** 50+
-- **Operators Covered:** 20+ (assignment, arithmetic, comparison, logical, string, ternary, typeof)
+- **Operators Covered:** 22+ (assignment, arithmetic, comparison, logical, string, ternary, typeof, increment/decrement, nullish coalescing)
 
 ---
 
@@ -489,6 +586,11 @@ console.log(typeof function(){}); // "function"
 ✅ Ternary operator (condition ? a : b)
 ✅ Nested ternary patterns for multi-condition logic
 ✅ typeof operator for runtime type checking
+✅ Increment/Decrement operators (++, --)
+✅ Nullish coalescing operator (??) for default values
+✅ If-else conditional statements
+✅ Chaining multiple conditions with if-else-if
+✅ Control flow and decision-making
 ✅ How code is compiled and executed
 ✅ Language compilation types (Compiled, Interpreted, JIT)
 ✅ JavaScript keywords and reserved words
