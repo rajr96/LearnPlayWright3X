@@ -1,0 +1,31 @@
+// Assignment operators
+let a = 10; // Assigns the value 10 to variable a
+let b = 3;  // Assigns the value 5 to variable b
+console.log(a); // Output: 10   
+console.log(b); // Output: 3
+
+// Addition assignment operator
+a += b; // Equivalent to a = a + b
+console.log(a); // Output: 15           
+
+//arithmetic operators
+let sum = a + b; // Addition
+let sub = a - b; // Subtraction
+let mul = a * b; // Multiplication
+let div = a / b;        // Division         
+
+console.log(sum); // Output: 20 
+console.log(sub); // Output: 10
+console.log(mul); // Output: 50
+console.log(div); // Output: 2
+
+
+//modulus operator
+let mod = a % b; // Modulus
+console.log(mod); // Output: 0  
+
+// n%2 == 1 - odd number, [n%2 == 0] - even number  
+
+//exponentiation operator
+let exp = a ** b;       
+console.log(exp); // Output: 1000

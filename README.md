@@ -22,6 +22,13 @@ LearnPlayWright3X/
 │   ├── 07_Literal.js           # String, number, boolean literals
 │   ├── 08_null_undefined.js    # Null vs Undefined difference
 │   └── 09_null_IQ.js           # IQ challenge on null/undefined
+├── 05_Chapter_Operator/        # Operators and operations
+│   ├── 13_DataTypes.js         # Reviewing data types
+│   ├── 14_Assignment_operator.js # Assignment operators (=, +=, -=, etc.)
+│   ├── 15_Arthmetic_Operator   # Arithmetic operators (+, -, *, /, %, etc.)
+│   ├── 16_comparsion_operator.js # Comparison operators (==, ===, >, <, etc.)
+│   ├── 17_logical_operators.js # Logical operators (&&, ||, !)
+│   └── 18_confusing_comparsion.js # Edge cases and confusing comparisons
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
@@ -80,6 +87,27 @@ LearnPlayWright3X/
 - The difference between `null` and `undefined`
 - When to use each value
 - Type checking with `typeof`
+
+---
+
+### Chapter 5: Operators (`05_Chapter_Operator/`)
+
+| File | Topic | Description | Concepts |
+|---|---|---|---|
+| `13_DataTypes.js` | Data Types Review | Reviewing all JavaScript data types | typeof operator, type checking |
+| `14_Assignment_operator.js` | Assignment | Assigning values using `=`, `+=`, `-=`, `*=`, `/=`, etc. | Variable assignment, compound assignment |
+| `15_Arthmetic_Operator` | Arithmetic | Basic math operators: `+`, `-`, `*`, `/`, `%`, `**` | Math operations, modulo, exponentiation |
+| `16_comparsion_operator.js` | Comparison | Comparing values: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` | Equality, strict equality, relational operators |
+| `17_logical_operators.js` | Logical | Boolean logic: `&&` (AND), `\|\|` (OR), `!` (NOT) | Logical operations, short-circuit evaluation |
+| `18_confusing_comparsion.js` | Confusing Cases | Edge cases and tricky comparison scenarios | Type coercion, NaN, null/undefined handling |
+
+**What You'll Learn:**
+- Different types of operators (assignment, arithmetic, comparison, logical)
+- Type coercion in JavaScript
+- Difference between `==` and `===`
+- Short-circuit evaluation in logical operators
+- Common pitfalls with `NaN`, `null`, and `undefined`
+- Operator precedence and associativity
 
 ---
 
@@ -228,12 +256,18 @@ git push -u origin master
 6. ✅ `04_Identifier_Ruls_Part2.js` — Advanced rules
 7. ✅ `05_comments.js` — Code documentation
 8. ✅ `06_identifier_IQ.js` — Challenge yourself
-
-### Advanced
 9. ✅ `07_Literal.js` — Understanding literals
 10. ✅ `08_null_undefined.js` — Special values
 11. ✅ `09_null_IQ.js` — Advanced challenge
-12. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
+
+### Advanced
+12. ✅ `13_DataTypes.js` — Review data types
+13. ✅ `14_Assignment_operator.js` — Assignment operators
+14. ✅ `15_Arthmetic_Operator` — Arithmetic operations
+15. ✅ `16_comparsion_operator.js` — Comparison & equality
+16. ✅ `17_logical_operators.js` — Boolean logic
+17. ✅ `18_confusing_comparsion.js` — Edge cases & pitfalls
+18. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
 
 ---
 
@@ -290,6 +324,66 @@ let noValue = null;      // Intentional absence
 let notDefined;          // undefined - no value assigned
 ```
 
+### Operators
+
+#### Assignment Operators
+```js
+let x = 10;      // Assignment
+x += 5;          // x = x + 5 = 15
+x -= 3;          // x = x - 3 = 12
+x *= 2;          // x = x * 2 = 24
+x /= 4;          // x = x / 4 = 6
+x %= 2;          // x = x % 2 = 0
+```
+
+#### Arithmetic Operators
+```js
+let a = 10, b = 3;
+console.log(a + b);   // 13 (addition)
+console.log(a - b);   // 7  (subtraction)
+console.log(a * b);   // 30 (multiplication)
+console.log(a / b);   // 3.333... (division)
+console.log(a % b);   // 1  (modulo - remainder)
+console.log(a ** b);  // 1000 (exponentiation)
+```
+
+#### Comparison Operators
+```js
+let x = 5, y = "5";
+console.log(x == y);    // true (loose equality - type coercion)
+console.log(x === y);   // false (strict equality - no coercion)
+console.log(x != y);    // false (loose inequality)
+console.log(x !== y);   // true (strict inequality)
+console.log(x > 3);     // true (greater than)
+console.log(x < 10);    // true (less than)
+console.log(x >= 5);    // true (greater than or equal)
+console.log(x <= 5);    // true (less than or equal)
+```
+
+#### Logical Operators
+```js
+let a = true, b = false;
+console.log(a && b);    // false (AND - both must be true)
+console.log(a || b);    // true  (OR - at least one true)
+console.log(!a);        // false (NOT - negation)
+
+// Short-circuit evaluation
+let x = 0 || 5;         // 5 (0 is falsy, returns 5)
+let y = 10 && 20;       // 20 (10 is truthy, returns 20)
+```
+
+#### Confusing Comparisons (Type Coercion)
+```js
+console.log(null == undefined);      // true
+console.log(null === undefined);     // false
+console.log("5" == 5);               // true (type coercion)
+console.log("5" === 5);              // false (strict - different types)
+console.log(NaN == NaN);             // false (!!)
+console.log(NaN === NaN);            // false (!!)
+console.log(0 == false);             // true (coercion)
+console.log(0 === false);            // false (different types)
+```
+
 ---
 
 ## 🔗 Useful Resources
@@ -305,12 +399,13 @@ let notDefined;          // undefined - no value assigned
 
 ## 📊 Statistics
 
-- **Total Chapters:** 4
-- **Total Exercises:** 9
+- **Total Chapters:** 5
+- **Total Exercises:** 15
 - **IQ Notes:** 5 comprehensive guides
 - **Keywords Documented:** 65+
 - **Commands Covered:** 100+
 - **Keyboard Shortcuts:** 50+
+- **Operators Covered:** 15+ (assignment, arithmetic, comparison, logical)
 
 ---
 
@@ -322,6 +417,11 @@ let notDefined;          // undefined - no value assigned
 ✅ Code documentation with comments
 ✅ Literals and data types
 ✅ Special values (null, undefined)
+✅ Assignment operators (=, +=, -=, *=, /=, %=, **=)
+✅ Arithmetic operators (+, -, *, /, %, **)
+✅ Comparison operators (==, ===, !=, !==, >, <, >=, <=)
+✅ Logical operators (&&, ||, !)
+✅ Type coercion and confusing comparisons
 ✅ How code is compiled and executed
 ✅ Language compilation types (Compiled, Interpreted, JIT)
 ✅ JavaScript keywords and reserved words
