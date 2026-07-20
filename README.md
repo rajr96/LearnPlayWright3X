@@ -28,7 +28,12 @@ LearnPlayWright3X/
 │   ├── 15_Arthmetic_Operator   # Arithmetic operators (+, -, *, /, %, etc.)
 │   ├── 16_comparsion_operator.js # Comparison operators (==, ===, >, <, etc.)
 │   ├── 17_logical_operators.js # Logical operators (&&, ||, !)
-│   └── 18_confusing_comparsion.js # Edge cases and confusing comparisons
+│   ├── 18_confusing_comparsion.js # Edge cases and confusing comparisons
+│   ├── 20_Question.js          # Operator practice questions & challenges
+│   ├── 21_String_Operators.js  # String concatenation and template literals
+│   ├── 22_Ternary_Operator.js  # Ternary (conditional) operator
+│   ├── 28_Nested_terny_operator.js # Nested ternary operator patterns
+│   └── 31_Type_op.js           # typeof and type-checking operators
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
@@ -100,6 +105,11 @@ LearnPlayWright3X/
 | `16_comparsion_operator.js` | Comparison | Comparing values: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` | Equality, strict equality, relational operators |
 | `17_logical_operators.js` | Logical | Boolean logic: `&&` (AND), `\|\|` (OR), `!` (NOT) | Logical operations, short-circuit evaluation |
 | `18_confusing_comparsion.js` | Confusing Cases | Edge cases and tricky comparison scenarios | Type coercion, NaN, null/undefined handling |
+| `20_Question.js` | Practice Questions | Operator challenges to reinforce learning | Problem-solving, all operator types |
+| `21_String_Operators.js` | String Operators | String concatenation using `+` and template literals | String joining, template literals, backticks |
+| `22_Ternary_Operator.js` | Ternary Operator | Shorthand conditional: `condition ? value1 : value2` | Conditional expression, inline if-else |
+| `28_Nested_terny_operator.js` | Nested Ternary | Chaining multiple ternary operators | Multi-condition ternary, readability |
+| `31_Type_op.js` | typeof Operator | Checking data types at runtime with `typeof` | Type checking, dynamic typing, type guards |
 
 **What You'll Learn:**
 - Different types of operators (assignment, arithmetic, comparison, logical)
@@ -107,7 +117,10 @@ LearnPlayWright3X/
 - Difference between `==` and `===`
 - Short-circuit evaluation in logical operators
 - Common pitfalls with `NaN`, `null`, and `undefined`
-- Operator precedence and associativity
+- String concatenation and template literals
+- Ternary operator as shorthand for if-else
+- Nested ternary patterns for multi-condition logic
+- Runtime type checking with `typeof`
 
 ---
 
@@ -267,7 +280,12 @@ git push -u origin master
 15. ✅ `16_comparsion_operator.js` — Comparison & equality
 16. ✅ `17_logical_operators.js` — Boolean logic
 17. ✅ `18_confusing_comparsion.js` — Edge cases & pitfalls
-18. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
+18. ✅ `20_Question.js` — Operator practice challenges
+19. ✅ `21_String_Operators.js` — String operators & templates
+20. ✅ `22_Ternary_Operator.js` — Ternary (conditional) operator
+21. ✅ `28_Nested_terny_operator.js` — Nested ternary patterns
+22. ✅ `31_Type_op.js` — typeof & type-checking
+23. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
 
 ---
 
@@ -384,6 +402,51 @@ console.log(0 == false);             // true (coercion)
 console.log(0 === false);            // false (different types)
 ```
 
+#### String Operators
+```js
+// Concatenation
+let firstName = "John";
+let lastName  = "Doe";
+console.log(firstName + " " + lastName);     // "John Doe"
+
+// Template literals (preferred)
+console.log(`${firstName} ${lastName}`);     // "John Doe"
+console.log(`Sum = ${2 + 3}`);               // "Sum = 5"
+
+// String + Number coercion
+console.log("5" + 3);   // "53" (string concat, not addition)
+console.log("5" - 3);   // 2   (numeric subtraction)
+```
+
+#### Ternary Operator
+```js
+// Syntax: condition ? valueIfTrue : valueIfFalse
+
+let age = 20;
+let status = age >= 18 ? "Adult" : "Minor";
+console.log(status);   // "Adult"
+
+// Nested ternary
+let score = 75;
+let grade = score >= 90 ? "A"
+          : score >= 75 ? "B"
+          : score >= 60 ? "C"
+          : "F";
+console.log(grade);    // "B"
+```
+
+#### typeof Operator
+```js
+console.log(typeof "hello");       // "string"
+console.log(typeof 42);            // "number"
+console.log(typeof true);          // "boolean"
+console.log(typeof undefined);     // "undefined"
+console.log(typeof null);          // "object" (historical JS bug)
+console.log(typeof {});            // "object"
+console.log(typeof []);            // "object"
+console.log(typeof function(){}); // "function"
+```
+
 ---
 
 ## 🔗 Useful Resources
@@ -400,12 +463,12 @@ console.log(0 === false);            // false (different types)
 ## 📊 Statistics
 
 - **Total Chapters:** 5
-- **Total Exercises:** 15
+- **Total Exercises:** 20
 - **IQ Notes:** 5 comprehensive guides
 - **Keywords Documented:** 65+
 - **Commands Covered:** 100+
 - **Keyboard Shortcuts:** 50+
-- **Operators Covered:** 15+ (assignment, arithmetic, comparison, logical)
+- **Operators Covered:** 20+ (assignment, arithmetic, comparison, logical, string, ternary, typeof)
 
 ---
 
@@ -422,6 +485,10 @@ console.log(0 === false);            // false (different types)
 ✅ Comparison operators (==, ===, !=, !==, >, <, >=, <=)
 ✅ Logical operators (&&, ||, !)
 ✅ Type coercion and confusing comparisons
+✅ String operators and template literals
+✅ Ternary operator (condition ? a : b)
+✅ Nested ternary patterns for multi-condition logic
+✅ typeof operator for runtime type checking
 ✅ How code is compiled and executed
 ✅ Language compilation types (Compiled, Interpreted, JIT)
 ✅ JavaScript keywords and reserved words
