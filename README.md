@@ -105,8 +105,8 @@ LearnPlayWright3X/
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
-| `13_DataTypes.js` | Data Types Review | Reviewing all JavaScript data types | typeof operator, type checking |
-| `14_Assignment_operator.js` | Assignment | Assigning values using `=`, `+=`, `-=`, `*=`, `/=`, etc. | Variable assignment, compound assignment |
+| `13_DataTypes.js` | Data Types Review | Reviewing all JavaScript data types including NaN | typeof operator, type checking, NaN |
+| `14_Assignment_operator.js` | Assignment | Full set of compound assignment operators with step-by-step examples | +=, -=, *=, /=, chained operations |
 | `15_Arthmetic_Operator` | Arithmetic | Basic math operators: `+`, `-`, `*`, `/`, `%`, `**` | Math operations, modulo, exponentiation |
 | `16_comparsion_operator.js` | Comparison | Comparing values: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` | Equality, strict equality, relational operators |
 | `17_logical_operators.js` | Logical | Boolean logic: `&&` (AND), `\|\|` (OR), `!` (NOT) | Logical operations, short-circuit evaluation |
@@ -114,7 +114,7 @@ LearnPlayWright3X/
 | `20_Question.js` | Practice Questions | Operator challenges to reinforce learning | Problem-solving, all operator types |
 | `21_String_Operators.js` | String Operators | String concatenation using `+` and template literals | String joining, template literals, backticks |
 | `22_Ternary_Operator.js` | Ternary Operator | Shorthand conditional: `condition ? value1 : value2` | Conditional expression, inline if-else |
-| `28_Nested_terny_operator.js` | Nested Ternary | Chaining multiple ternary operators | Multi-condition ternary, readability |
+| `28_Nested_terny_operator.js` | Nested Ternary | Chaining multiple ternary operators — HTTP status codes, weather, voting examples | Multi-condition ternary, real-world scenarios |
 | `31_Type_op.js` | typeof Operator | Checking data types at runtime with `typeof` | Type checking, dynamic typing, type guards |
 | `32_Increment_Decrement_operator.js` | Inc/Dec Operators | Pre and post increment/decrement (`++`, `--`) | ++x vs x++, --x vs x--, side effects |
 | `36_null_coalescing.js` | Nullish Coalescing | `??` operator to handle null/undefined | Providing defaults for nullish values |

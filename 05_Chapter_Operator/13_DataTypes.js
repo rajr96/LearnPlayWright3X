@@ -48,3 +48,7 @@ function greet() {
 
 console.log(greet()); // Output: Hello, World!  
 
+//nan - represents a value that is not a number
+let notANumber = NaN;
+console.log(notANumber); // Output: NaN 
+

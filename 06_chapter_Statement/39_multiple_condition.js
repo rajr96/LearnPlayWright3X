@@ -10,3 +10,4 @@ if (score >= 90) {
 } else {
   console.log("Grade: F");
 }
+
