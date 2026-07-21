@@ -40,6 +40,9 @@ LearnPlayWright3X/
 │   ├── 37_iQ.js                # IQ challenge on conditionals
 │   ├── 38.IQ.js                # Additional conditional challenges
 │   └── 39_multiple_condition.js # Multiple if-else statements
+├── 07_Chapter_switch/          # Switch statements
+│   ├── 39_switch.js            # Switch statement with day of week example
+│   └── 40_IQ.js                # Switch statement challenges with multiple cases
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
@@ -148,6 +151,23 @@ LearnPlayWright3X/
 - Chaining multiple conditions
 - Decision-making structures
 - Practical applications (grading systems, etc.)
+
+---
+
+### Chapter 7: Switch Statements (`07_Chapter_switch/`)
+
+| File | Topic | Description | Concepts |
+|---|---|---|---|
+| `39_switch.js` | Switch Basics | Switch statement for day of week selection | Case matching, break statements, default |
+| `40_IQ.js` | Switch Challenges | Multiple switch examples with grouped cases (browsers, fruits) | Fall-through cases, multiple matching conditions |
+
+**What You'll Learn:**
+- Switch statement syntax and structure
+- Case matching and the `break` statement
+- Default case handling
+- Grouping multiple cases (fall-through pattern)
+- When to use switch vs if-else
+- Real-world examples (day selector, browser detection, category classification)
 
 ---
 
@@ -317,7 +337,9 @@ git push -u origin master
 25. ✅ `37_iQ.js` — Conditional logic challenge
 26. ✅ `38.IQ.js` — More conditional challenges
 27. ✅ `39_multiple_condition.js` — If-else-if chains (grading system)
-28. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
+28. ✅ `39_switch.js` — Switch statement with day selector
+29. ✅ `40_IQ.js` — Switch statement challenges (browsers, fruits)
+30. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
 
 ---
 
@@ -544,6 +566,52 @@ if (score >= 90) {
 }
 ```
 
+### Control Flow - Switch Statements
+```js
+// Basic switch statement
+let day = 3;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+// Switch with multiple matching cases (fall-through)
+let browser = "Chrome";
+switch (browser) {
+  case "Chrome":
+  case "Firefox":
+  case "Safari":
+    console.log("We support this browser");
+    break;
+  case "Edge":
+    console.log("You've got the Edge!");
+    break;
+  default:
+    console.log("Unknown browser");
+}
+
+// Switch with grouped cases
+let fruit = "Mango";
+switch (fruit) {
+  case "Banana":
+  case "Mango":
+  case "Pineapple":
+    console.log("Tropical fruit");
+    break;
+  default:
+    console.log("Unknown fruit");
+}
+```
+
 ---
 
 ## 🔗 Useful Resources
@@ -559,13 +627,14 @@ if (score >= 90) {
 
 ## 📊 Statistics
 
-- **Total Chapters:** 6
-- **Total Exercises:** 23
+- **Total Chapters:** 7
+- **Total Exercises:** 25
 - **IQ Notes:** 5 comprehensive guides
 - **Keywords Documented:** 65+
 - **Commands Covered:** 100+
 - **Keyboard Shortcuts:** 50+
 - **Operators Covered:** 22+ (assignment, arithmetic, comparison, logical, string, ternary, typeof, increment/decrement, nullish coalescing)
+- **Control Structures:** if-else, switch statements
 
 ---
 
@@ -590,6 +659,9 @@ if (score >= 90) {
 ✅ Nullish coalescing operator (??) for default values
 ✅ If-else conditional statements
 ✅ Chaining multiple conditions with if-else-if
+✅ Switch statements for multiple case matching
+✅ Fall-through pattern in switch cases
+✅ Case grouping and default handling
 ✅ Control flow and decision-making
 ✅ How code is compiled and executed
 ✅ Language compilation types (Compiled, Interpreted, JIT)
