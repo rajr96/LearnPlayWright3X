@@ -43,10 +43,13 @@ LearnPlayWright3X/
 ├── 07_Chapter_switch/          # Switch statements
 │   ├── 39_switch.js            # Switch statement with day of week example
 │   └── 40_IQ.js                # Switch statement challenges with multiple cases
-├── 08_Userinputs/              # User input handling exercises
+├── 08_Chapter_UserInputs/      # User input handling exercises
 │   ├── 50_Prompt.js            # Input with prompt-sync in Node.js
 │   ├── 51_Fs.js                # Input with fs.readFileSync from stdin
 │   └── JS.js                   # Browser-style prompt-based even/odd check
+├── 09_chapter_Loops/           # Looping concepts and repetition exercises
+│   ├── For_Loop.js             # For-loop example that prints 0 to 9
+│   └── loop.js                 # Manual repeated console output example
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
@@ -176,7 +179,7 @@ LearnPlayWright3X/
 
 ---
 
-### Chapter 8: User Inputs (`08_Userinputs/`)
+### Chapter 8: User Inputs (`08_Chapter_UserInputs/`)
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
@@ -189,6 +192,21 @@ LearnPlayWright3X/
 - The difference between interactive input methods (`prompt-sync` vs `fs.readFileSync`)
 - Why stdin-based input may wait for EOF in terminal mode
 - Converting input strings to numbers safely
+
+---
+
+### Chapter 9: Loops (`09_chapter_Loops/`)
+
+| File | Topic | Description | Concepts |
+|---|---|---|---|
+| `For_Loop.js` | For Loop | Demonstrates a `for` loop that prints values from 0 to 9 | Loop initialization, condition, increment, repetition |
+| `loop.js` | Repetition Example | Shows a basic repeated console output example to understand loop behavior | Iteration, sequential execution |
+
+**What You'll Learn:**
+- How loops repeat a block of code
+- The structure of a `for` loop
+- Why loops are useful for repetitive tasks
+- The difference between manual repetition and automated repetition
 
 ---
 
@@ -369,22 +387,31 @@ git push -u origin master
 
 ## ✅ Latest Exercise Updates
 
-The following exercises were completed and updated most recently:
+The following exercises were completed and documented in this repository:
 
-### 1) `08_Userinputs/50_Prompt.js`
+### 1) `08_Chapter_UserInputs/50_Prompt.js`
 - Added interactive number input using `prompt-sync`.
 - Converts input to number and checks whether the value is even or odd.
 - Demonstrates practical CLI user interaction in Node.js.
 
-### 2) `08_Userinputs/51_Fs.js`
+### 2) `08_Chapter_UserInputs/51_Fs.js`
 - Added stdin-based input using `fs.readFileSync(0, 'utf-8')`.
 - Shows how competitive-programming style input works in Node.js.
 - Reinforces terminal EOF behavior when reading from stdin.
 
-### 3) `08_Userinputs/JS.js`
+### 3) `08_Chapter_UserInputs/JS.js`
 - Added prompt-style even/odd exercise format.
 - Highlights input parsing with `Number(...)` before arithmetic checks.
 - Reinforces reusable condition-based output formatting.
+
+### 4) `09_chapter_Loops/For_Loop.js`
+- Added a basic `for` loop example that prints values from 0 to 9.
+- Illustrates the loop structure: initialization, condition, and iteration.
+- Helps connect theory with practical repetition logic.
+
+### 5) `09_chapter_Loops/loop.js`
+- Added a simple repetition example to compare manual output with loop-based output.
+- Showcases how loops reduce repeated code and improve readability.
 
 ---
 
