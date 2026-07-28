@@ -43,12 +43,17 @@ LearnPlayWright3X/
 ├── 07_Chapter_switch/          # Switch statements
 │   ├── 39_switch.js            # Switch statement with day of week example
 │   └── 40_IQ.js                # Switch statement challenges with multiple cases
+├── 08_Userinputs/              # User input handling exercises
+│   ├── 50_Prompt.js            # Input with prompt-sync in Node.js
+│   ├── 51_Fs.js                # Input with fs.readFileSync from stdin
+│   └── JS.js                   # Browser-style prompt-based even/odd check
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
 │   ├── 02_keyword_notes.md                    # 65+ JavaScript keywords
 │   ├── 03_commands_win.md                     # Windows/PowerShell commands
-│   └── 03_commands_mac.md                     # macOS/Bash commands
+│   ├── 03_commands_mac.md                     # macOS/Bash commands
+│   └── examples.js                            # Quick JavaScript examples
 └── README.md                   # This file
 ```
 
@@ -168,6 +173,22 @@ LearnPlayWright3X/
 - Grouping multiple cases (fall-through pattern)
 - When to use switch vs if-else
 - Real-world examples (day selector, browser detection, category classification)
+
+---
+
+### Chapter 8: User Inputs (`08_Userinputs/`)
+
+| File | Topic | Description | Concepts |
+|---|---|---|---|
+| `50_Prompt.js` | Input via prompt-sync | Takes a number using `prompt-sync` and checks even/odd | External package input, Number conversion, conditionals |
+| `51_Fs.js` | Input via stdin | Reads console input using `fs.readFileSync(0, 'utf-8')` | stdin, EOF handling, Node.js runtime input |
+| `JS.js` | Browser prompt style | Prompt-style example for even/odd logic | Prompt input pattern, parity checks |
+
+**What You'll Learn:**
+- How to accept user input in Node.js
+- The difference between interactive input methods (`prompt-sync` vs `fs.readFileSync`)
+- Why stdin-based input may wait for EOF in terminal mode
+- Converting input strings to numbers safely
 
 ---
 
@@ -340,6 +361,9 @@ git push -u origin master
 28. ✅ `39_switch.js` — Switch statement with day selector
 29. ✅ `40_IQ.js` — Switch statement challenges (browsers, fruits)
 30. 📖 `Compiled_Interpreted_JIT_IQ.md` — Deep dive into compilation
+31. ✅ `50_Prompt.js` — Even/odd check using prompt-sync
+32. ✅ `51_Fs.js` — Even/odd greeting using stdin input
+33. ✅ `JS.js` — Prompt-style input and parity check
 
 ---
 
@@ -347,24 +371,20 @@ git push -u origin master
 
 The following exercises were completed and updated most recently:
 
-### 1) `07_Chapter_switch/39_switch.js`
-- Implemented a day-of-week selector using numeric `switch` cases.
-- Uses `break` in each case to avoid fall-through.
-- Includes `default` handling for invalid input values.
+### 1) `08_Userinputs/50_Prompt.js`
+- Added interactive number input using `prompt-sync`.
+- Converts input to number and checks whether the value is even or odd.
+- Demonstrates practical CLI user interaction in Node.js.
 
-### 2) `07_Chapter_switch/40_IQ.js`
-- Added multiple `switch` practice examples:
-  - Day mapping example (`0` to `6`).
-  - Browser support grouping using multiple `case` labels.
-  - Fruit category checks with grouped cases.
-- Demonstrates both correct `break` usage and a fall-through pattern for learning behavior.
+### 2) `08_Userinputs/51_Fs.js`
+- Added stdin-based input using `fs.readFileSync(0, 'utf-8')`.
+- Shows how competitive-programming style input works in Node.js.
+- Reinforces terminal EOF behavior when reading from stdin.
 
-### 3) `IQ_Notes/Prompt.js`
-- Added interactive day-of-week prompt exercise.
-- Includes a reusable `getDayName` function.
-- Supports browser input via `prompt(...)`.
-- Supports Node.js input via `readline`.
-- Includes environment-safe fallback message for unsupported runtimes.
+### 3) `08_Userinputs/JS.js`
+- Added prompt-style even/odd exercise format.
+- Highlights input parsing with `Number(...)` before arithmetic checks.
+- Reinforces reusable condition-based output formatting.
 
 ---
 
