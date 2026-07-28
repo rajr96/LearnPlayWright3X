@@ -343,6 +343,31 @@ git push -u origin master
 
 ---
 
+## ✅ Latest Exercise Updates
+
+The following exercises were completed and updated most recently:
+
+### 1) `07_Chapter_switch/39_switch.js`
+- Implemented a day-of-week selector using numeric `switch` cases.
+- Uses `break` in each case to avoid fall-through.
+- Includes `default` handling for invalid input values.
+
+### 2) `07_Chapter_switch/40_IQ.js`
+- Added multiple `switch` practice examples:
+  - Day mapping example (`0` to `6`).
+  - Browser support grouping using multiple `case` labels.
+  - Fruit category checks with grouped cases.
+- Demonstrates both correct `break` usage and a fall-through pattern for learning behavior.
+
+### 3) `IQ_Notes/Prompt.js`
+- Added interactive day-of-week prompt exercise.
+- Includes a reusable `getDayName` function.
+- Supports browser input via `prompt(...)`.
+- Supports Node.js input via `readline`.
+- Includes environment-safe fallback message for unsupported runtimes.
+
+---
+
 ## 🎓 Key Concepts Summary
 
 ### Variables & Declaration

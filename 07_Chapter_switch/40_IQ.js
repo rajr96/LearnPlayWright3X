@@ -56,4 +56,29 @@ switch (fruit) {
         console.log("Unknown fruit");
 }           
 
-    
+    let browser1 = "Chrome";
+switch (browser1) {
+    case "Edge":    
+        console.log("You've got the Edge!");
+        break;  
+    case "Chrome":  
+    case "Firefox":             
+    case "Safari":      
+    case "Opera":
+        console.log("Okay we support these browsers too");  
+        break;
+    default:
+        console.log("We hope that this page looks ok!");  
+}               
+
+let fruit1 = "Banana";
+switch (fruit1) {
+    case "Banana":  
+        console.log("Tropical fruit Banana");
+    case "Mango":
+        console.log("Tropical fruit Mango");
+    case "Pineapple":
+        console.log("Tropical fruit Pineapple");  
+    default:
+        console.log("Unknown fruit");
+}

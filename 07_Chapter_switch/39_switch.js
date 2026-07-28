@@ -25,3 +25,5 @@ switch (day) {
     default:
         console.log("Invalid day");
 }           
+
+
