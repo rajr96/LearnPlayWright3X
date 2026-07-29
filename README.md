@@ -48,6 +48,11 @@ LearnPlayWright3X/
 │   ├── 51_Fs.js                # Input with fs.readFileSync from stdin
 │   └── JS.js                   # Browser-style prompt-based even/odd check
 ├── 09_chapter_Loops/           # Looping concepts and repetition exercises
+│   ├── 57_While.js             # While loop example with incrementing counter
+│   ├── 60_while_vs_for.js      # Comparison between while and for loops
+│   ├── 61_Do_While.js          # Do-while loop example and execution behavior
+│   ├── 62_DoWhile_vs_whle.js   # Comparison between do-while and while loops
+│   ├── 63_NestedFor_Loop.js    # Nested loop example for repeated inner iterations
 │   ├── For_Loop.js             # For-loop example that prints 0 to 9
 │   └── loop.js                 # Manual repeated console output example
 ├── IQ_Notes/                   # Comprehensive learning guides
@@ -199,14 +204,20 @@ LearnPlayWright3X/
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
+| `57_While.js` | While Loop | Demonstrates a `while` loop that keeps running while a condition is true | Condition checking, iteration, counter update |
+| `60_while_vs_for.js` | While vs For | Compares `while` and `for` loops for similar tasks | Loop choice, readability, structure |
+| `61_Do_While.js` | Do While Loop | Shows how a `do...while` loop runs at least once before checking the condition | Post-test loop, execution order |
+| `62_DoWhile_vs_whle.js` | Do While vs While | Highlights the difference in execution flow between `do...while` and `while` | Conditional behavior, edge cases |
+| `63_NestedFor_Loop.js` | Nested For Loop | Demonstrates loops inside loops for repeated patterns | Nested iteration, inner/outer loops |
 | `For_Loop.js` | For Loop | Demonstrates a `for` loop that prints values from 0 to 9 | Loop initialization, condition, increment, repetition |
 | `loop.js` | Repetition Example | Shows a basic repeated console output example to understand loop behavior | Iteration, sequential execution |
 
 **What You'll Learn:**
 - How loops repeat a block of code
-- The structure of a `for` loop
+- The structure of `for`, `while`, and `do...while` loops
 - Why loops are useful for repetitive tasks
 - The difference between manual repetition and automated repetition
+- How nested loops work for pattern-based problems
 
 ---
 
@@ -398,6 +409,11 @@ The following exercises were completed and documented in this repository:
 - Added stdin-based input using `fs.readFileSync(0, 'utf-8')`.
 - Shows how competitive-programming style input works in Node.js.
 - Reinforces terminal EOF behavior when reading from stdin.
+
+### 3) `09_chapter_Loops/63_NestedFor_Loop.js`
+- Added nested loop examples to demonstrate repetition inside repetition.
+- Supports understanding how inner loops run for every outer-loop iteration.
+- Builds a strong foundation for pattern generation and matrix-style traversal.
 
 ### 3) `08_Chapter_UserInputs/JS.js`
 - Added prompt-style even/odd exercise format.
