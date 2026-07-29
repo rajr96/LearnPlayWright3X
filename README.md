@@ -4,7 +4,7 @@ A comprehensive learning repository for JavaScript fundamentals, covering basics
 
 ## 🧠 Exercise Coverage Summary
 
-This repository contains a full set of beginner-friendly JavaScript exercises organized by topic. The practice flow starts with basic syntax and variables, then moves into identifiers, literals, operators, conditionals, switches, user input, and finally loops.
+This repository contains a full set of beginner-friendly JavaScript exercises organized by topic. The practice flow starts with basic syntax and variables, then moves into identifiers, literals, operators, conditionals, switches, user input, loops, and finally arrays.
 
 ### 01_chapter_Javascript
 - 01_Helloworld.js: your first JavaScript program using console output
@@ -58,6 +58,14 @@ This repository contains a full set of beginner-friendly JavaScript exercises or
 - 63_NestedFor_Loop.js: nested loop examples for repeated inner iterations
 - For_Loop.js: classic for loop examples
 - loop.js: simple repetition exercises to understand iteration
+
+### 10_chapter_Arrays
+- 64_Array.js: basic array creation, indexing, and common array methods such as push, pop, unshift, shift, splice, sort, reverse, indexOf, includes, join, and slice
+- 66_Array_Creation.js: multiple ways to create arrays including array literals, Array constructors, Array.of(), and Array.from()
+- 67_Array_Modifying.js: direct element assignment and array modification using push, pop, shift, unshift, splice, sort, reverse, and slicing
+- 69_Array_Real.js: a practical example of iterating over an array of browsers using a loop
+- 70_Array_Searching.js: searching within arrays with indexOf(), lastIndexOf(), and includes()
+- 72_Array Iterate.js: array iteration using a for loop, for...of, and forEach()
 
 ### IQ_Notes
 - source_code_bytecode_binary_iQ.md: explanation of source code, bytecode, and binary execution
@@ -138,6 +146,13 @@ LearnPlayWright3X/
 │   ├── 63_NestedFor_Loop.js    # Nested loop example for repeated inner iterations
 │   ├── For_Loop.js             # For-loop example that prints 0 to 9
 │   └── loop.js                 # Manual repeated console output example
+├── 10_chapter_Arrays/          # Arrays and array manipulation exercises
+│   ├── 64_Array.js             # Basic array methods and element access
+│   ├── 66_Array_Creation.js    # Different ways to create arrays
+│   ├── 67_Array_Modifying.js   # Array modification and mutation methods
+│   ├── 69_Array_Real.js        # Practical array example with real data
+│   ├── 70_Array_Searching.js   # Searching and finding elements in arrays
+│   └── 72_Array Iterate.js     # Iteration techniques with for, for...of, and forEach
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
