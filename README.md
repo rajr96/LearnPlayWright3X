@@ -2,6 +2,71 @@
 
 A comprehensive learning repository for JavaScript fundamentals, covering basics to advanced concepts with hands-on exercises and IQ Notes documentation.
 
+## 🧠 Exercise Coverage Summary
+
+This repository contains a full set of beginner-friendly JavaScript exercises organized by topic. The practice flow starts with basic syntax and variables, then moves into identifiers, literals, operators, conditionals, switches, user input, and finally loops.
+
+### 01_chapter_Javascript
+- 01_Helloworld.js: your first JavaScript program using console output
+- 02_Let_concept.js: understanding variable declaration with let and basic execution flow
+
+### 03_chapter_identifier
+- 03_identifier_Rules.js: naming rules for variables and functions
+- 04_Identifier_Ruls_Part2.js: deeper identifier rules and common naming pitfalls
+- 05_comments.js: single-line and multi-line comments for code clarity
+- 06_identifier_IQ.js: challenge-based practice on identifiers and syntax conventions
+
+### 04_Chapter_Literal
+- 07_Literal.js: examples of string, number, boolean, and other literals
+- 08_null_undefined.js: understanding null and undefined values
+- 09_null_IQ.js: practical questions on special values and comparisons
+
+### 05_Chapter_Operator
+- 13_DataTypes.js: review of JavaScript data types and type checking
+- 14_Assignment_operator.js: assignment and compound assignment operators
+- 15_Arthmetic_Operator: arithmetic operations such as +, -, *, /, %, and **
+- 16_comparsion_operator.js: comparison and equality operators
+- 17_logical_operators.js: logical operators for decision-making
+- 18_confusing_comparsion.js: tricky comparison cases and coercion examples
+- 20_Question.js: operator practice problems and challenge questions
+- 21_String_Operators.js: string concatenation and template literals
+- 22_Ternary_Operator.js: shorthand conditional expressions
+- 28_Nested_terny_operator.js: nested ternary patterns for multi-condition logic
+- 31_Type_op.js: using typeof for runtime type inspection
+- 32_Increment_Decrement_operator.js: pre/post increment and decrement behavior
+- 36_null_coalescing.js: using ?? to provide fallbacks for nullish values
+
+### 06_chapter_Statement
+- 37_iQ.js: conditional challenge questions
+- 38.IQ.js: more practice on decision structures
+- 39_multiple_condition.js: grading-style examples using if/else-if chains
+
+### 07_Chapter_switch
+- 39_switch.js: switch statement basics with cases and break usage
+- 40_IQ.js: additional switch-based exercises and pattern matching practice
+
+### 08_Chapter_UserInputs
+- 50_Prompt.js: collecting user input using prompt-sync
+- 51_Fs.js: reading from stdin with fs.readFileSync
+- JS.js: prompt-style even/odd examples for input handling
+
+### 09_chapter_Loops
+- 57_While.js: while loop examples with incrementing counters
+- 60_while_vs_for.js: comparison between while and for loops
+- 61_Do_While.js: do...while loop examples and execution order
+- 62_DoWhile_vs_whle.js: differences between do...while and while loops
+- 63_NestedFor_Loop.js: nested loop examples for repeated inner iterations
+- For_Loop.js: classic for loop examples
+- loop.js: simple repetition exercises to understand iteration
+
+### IQ_Notes
+- source_code_bytecode_binary_iQ.md: explanation of source code, bytecode, and binary execution
+- Compiled_Interpreted_JIT_IQ.md: notes on compiled, interpreted, and JIT execution models
+- 02_keyword_notes.md: overview of JavaScript keywords and reserved words
+- 03_commands_win.md: Windows/PowerShell and VS Code command notes
+- 03_commands_mac.md: macOS/Bash and VS Code command notes
+- examples.js: quick reference examples to reinforce concepts
+
 ---
 
 ## 📚 Repository Structure
