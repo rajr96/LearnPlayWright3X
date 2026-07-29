@@ -69,7 +69,25 @@ This repository contains a full set of beginner-friendly JavaScript exercises or
 
 ---
 
-## 📚 Repository Structure
+## � Learning Progress Tracker
+
+The exercises in this repository are grouped to help you move from basic JavaScript syntax to more advanced concepts in a steady order:
+
+- Basics: Hello world, variables, and simple output
+- Identifiers: naming rules, comments, and challenge-based practice
+- Literals: strings, numbers, booleans, null, and undefined
+- Operators: arithmetic, comparison, logical, string, ternary, typeof, increment/decrement, and nullish coalescing
+- Statements and conditions: if/else chains and multiple-condition logic
+- Switch statements: case-based branching and decision exercises
+- User input: prompt-based and stdin-based examples
+- Loops: while, do-while, for, and nested loop patterns
+- Notes: conceptual guides for keywords, commands, and compilation/runtime behavior
+
+This makes the repository suitable for both self-study and revision before moving on to more advanced JavaScript topics.
+
+---
+
+## �📚 Repository Structure
 
 ```
 LearnPlayWright3X/
