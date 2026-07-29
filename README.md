@@ -169,6 +169,11 @@ LearnPlayWright3X/
 
 ### Chapter 1: JavaScript Basics (`01_chapter_Javascript/`)
 
+```js
+let name = "Alice";
+console.log("Hello, " + name);
+```
+
 | File | Topic | Description | Concepts |
 |---|---|---|---|
 | `01_Helloworld.js` | Getting Started | First JavaScript program using console.log | Output, console methods |
@@ -183,6 +188,12 @@ LearnPlayWright3X/
 ---
 
 ### Chapter 3: Identifiers (`03_chapter_identifier/`)
+
+```js
+let userName = "Ravi";
+const MAX_LIMIT = 100;
+console.log(userName, MAX_LIMIT);
+```
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
@@ -201,6 +212,13 @@ LearnPlayWright3X/
 
 ### Chapter 4: Literals (`04_Chapter_Literal/`)
 
+```js
+let message = "Hello";
+let age = 25;
+let isActive = true;
+console.log(message, age, isActive);
+```
+
 | File | Topic | Description | Concepts |
 |---|---|---|---|
 | `07_Literal.js` | Literal Values | String, number, boolean, and object literals | Data types, literal syntax |
@@ -216,6 +234,14 @@ LearnPlayWright3X/
 ---
 
 ### Chapter 5: Operators (`05_Chapter_Operator/`)
+
+```js
+let a = 10;
+let b = 3;
+console.log(a + b);
+console.log(a > b);
+console.log(a % b);
+```
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
@@ -250,6 +276,17 @@ LearnPlayWright3X/
 
 ### Chapter 6: Statements (`06_chapter_Statement/`)
 
+```js
+let marks = 85;
+if (marks >= 90) {
+  console.log("Grade A");
+} else if (marks >= 70) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+}
+```
+
 | File | Topic | Description | Concepts |
 |---|---|---|---|
 | `37_iQ.js` | Conditional Challenge | IQ challenge testing conditional logic | if-else, nested conditions |
@@ -266,6 +303,20 @@ LearnPlayWright3X/
 ---
 
 ### Chapter 7: Switch Statements (`07_Chapter_switch/`)
+
+```js
+let day = 3;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  default:
+    console.log("Other day");
+}
+```
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
@@ -284,6 +335,12 @@ LearnPlayWright3X/
 
 ### Chapter 8: User Inputs (`08_Chapter_UserInputs/`)
 
+```js
+const fs = require("fs");
+const name = fs.readFileSync(0, "utf8").trim();
+console.log("Hello " + name);
+```
+
 | File | Topic | Description | Concepts |
 |---|---|---|---|
 | `50_Prompt.js` | Input via prompt-sync | Takes a number using `prompt-sync` and checks even/odd | External package input, Number conversion, conditionals |
@@ -299,6 +356,12 @@ LearnPlayWright3X/
 ---
 
 ### Chapter 9: Loops (`09_chapter_Loops/`)
+
+```js
+for (let i = 1; i <= 3; i++) {
+  console.log("Iteration " + i);
+}
+```
 
 | File | Topic | Description | Concepts |
 |---|---|---|---|
@@ -318,6 +381,15 @@ LearnPlayWright3X/
 - How nested loops work for pattern-based problems
 
 ---
+
+### Chapter 10: Arrays (`10_chapter_Arrays/`)
+
+```js
+const fruits = ["apple", "banana"];
+fruits.push("mango");
+console.log(fruits[0]);
+console.log(fruits.length);
+```
 
 ## 📖 IQ Notes - Comprehensive Learning Guides
 
