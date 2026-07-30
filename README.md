@@ -66,6 +66,13 @@ This repository contains a full set of beginner-friendly JavaScript exercises or
 - 69_Array_Real.js: a practical example of iterating over an array of browsers using a loop
 - 70_Array_Searching.js: searching within arrays with indexOf(), lastIndexOf(), and includes()
 - 72_Array Iterate.js: array iteration using a for loop, for...of, and forEach()
+- 73_Array_Transforming.js: transforming arrays with map(), filter(), reduce(), some(), every(), flat(), and flatMap()
+- 74_Array_sorting.js: sorting arrays numerically, alphabetically, and by object properties
+- 75_Array_Slicing.js: slicing arrays with start/end indexes and negative indexes
+- 76_ArrayConcat.js: concatenating arrays with concat() and the spread operator
+- 77_Array_Checking.js: checking whether values are arrays and testing array contents with every() and some()
+- 78_Array_Copy.js: creating shallow and deep copies of arrays
+- 79_Array_Destructuring.js: extracting values from arrays using destructuring syntax
 
 ### IQ_Notes
 - source_code_bytecode_binary_iQ.md: explanation of source code, bytecode, and binary execution
@@ -152,7 +159,14 @@ LearnPlayWright3X/
 │   ├── 67_Array_Modifying.js   # Array modification and mutation methods
 │   ├── 69_Array_Real.js        # Practical array example with real data
 │   ├── 70_Array_Searching.js   # Searching and finding elements in arrays
-│   └── 72_Array Iterate.js     # Iteration techniques with for, for...of, and forEach
+│   ├── 72_Array Iterate.js     # Iteration techniques with for, for...of, and forEach
+│   ├── 73_Array_Transforming.js # Transforming arrays with map/filter/reduce
+│   ├── 74_Array_sorting.js     # Sorting arrays in different ways
+│   ├── 75_Array_Slicing.js     # Slicing and extracting array portions
+│   ├── 76_ArrayConcat.js       # Concatenating arrays
+│   ├── 77_Array_Checking.js    # Checking arrays and their contents
+│   ├── 78_Array_Copy.js        # Shallow and deep copies
+│   └── 79_Array_Destructuring.js # Array destructuring with rest syntax
 ├── IQ_Notes/                   # Comprehensive learning guides
 │   ├── source_code_bytecode_binary_iQ.md      # Code layers explained
 │   ├── Compiled_Interpreted_JIT_IQ.md         # Language compilation types
