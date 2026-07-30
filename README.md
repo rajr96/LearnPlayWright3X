@@ -2,6 +2,10 @@
 
 A comprehensive learning repository for JavaScript fundamentals, covering basics to advanced concepts with hands-on exercises and IQ Notes documentation.
 
+GitHub Repository: https://github.com/rajr96/LearnPlayWright3X
+
+This repository is maintained as a learning record of JavaScript exercises and notes. Updates can be committed locally and pushed to GitHub with standard Git commands.
+
 ## 🧠 Exercise Coverage Summary
 
 This repository contains a full set of beginner-friendly JavaScript exercises organized by topic. The practice flow starts with basic syntax and variables, then moves into identifiers, literals, operators, conditionals, switches, user input, loops, and finally arrays.
